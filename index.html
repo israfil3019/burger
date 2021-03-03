@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>MC-Burgers</title>
+</head>
+<body style="margin: auto; width: 80%;">
+    <div id="header" style="text-align: center;">
+       <img src="https://cdn.wallpapersafari.com/4/50/MWVysk.jpg" alt="burger"  style="height: 40%; border-radius: 20%; padding: 10px;">
+       <hr>
+    </div>
+    <form method="GET" style="border: 2px solid gray; padding: 10px;width: 30%; margin: auto; margin-bottom: 10px;">
+        <div>
+            <h1>Create a burger!</h1>                    
+        </div>
+        <div>
+            <label for="protein">What type of protein would you like?</label>
+            <input type="text" id="protein" name="protein">
+        </div>
+        <hr>
+        <div>
+            <label for="patties">How many patties would you like?</label>
+            <input type="text" name="patty" id="patties">
+        </div>
+        <hr>
+        <div>
+            <label for="cooked">How do you want your patty cooked?</label>
+            <br>
+            <span>Rare<input type="range" name="cook-time" id="cooked" min="0" max="100" step="25">Well-Done</span>
+        </div>
+        <hr>
+        <div>
+            <label for="">What toppinngs would you like?</label><br>
+            <input type="checkbox" name="Vegy" id="Lettuce">
+            <label for="Lettuce">Lettuce</label>
+            <input type="checkbox" name="Vegy" id="Tomato">
+            <label for="Tomato">Tomato</label>
+            <input type="checkbox" name="Vegy" id="Onion">
+            <label for="Onion">Onion</label>
+        </div>
+        <hr>
+        <div>
+            <label for="cheese">Would you like to add cheese?</label><br>
+            <input type="radio" name="cheese" id="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="cheese" id="no" checked>
+            <label for="no">No</label>
+        </div>
+        <hr>
+        <div>
+            <label for="Bun">What type of bun would you like?</label>
+            <select name="bun" id="Bun">
+                <option>Sesame</option>
+                <option value="">Potato</option>
+                <option value="">Pretzel</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="souce">What type of souce would you like?</label>
+            <input type="text" name="souce" list="souce"> 
+            <datalist id="souce">
+                <option value="ketchup">
+                <option value="mayo">
+                <option value="mustard">
+            </datalist>
+        </div>
+        <hr>
+        <div>
+            <label for="comment">Anything else you want to add?</label><br>
+            <textarea name="comments" id="comment" cols="30" rows="3"></textarea>
+        </div>
+        <hr>
+        <input type="submit" value="Send it to the Oven!" style="padding: 10px;">
+    </form>
+</body>
+</html>
